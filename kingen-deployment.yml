@@ -25,7 +25,8 @@ metadata:
   name: kingen-svc
 spec:
   ports:
-    - port: 8761
+    - name: svc-port
+      port: 8761
       targetPort: 8761
   selector:
     app: kingen

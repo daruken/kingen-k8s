@@ -25,7 +25,8 @@ metadata:
   name: gateway-svc
 spec:
   ports:
-    - port: 28080
+    - name: svc-port
+      port: 28080
       targetPort: 28080
   selector:
     app: gateway
