@@ -13,21 +13,14 @@ spec:
         app: gateway
     spec:
       containers:
-        - image: daruken/gateway:56cd288b235e39f1ee000b7a8fcfe166d50f9a4f
-          name: gateway
+        - name: gateway
+          image: daruken/gateway:56cd288b235e39f1ee000b7a8fcfe166d50f9a4f
           ports:
             - containerPort: 28080
-
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: gateway-svc
-spec:
-  type: NodePort
-  ports:
-    - nodePort: 30005
-      port: 28080
-      targetPort: 28080
-  selector:
-    app: gateway
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: "1"
+            requests:
+              memory: 256Mi
+              cpu: "0.2"
