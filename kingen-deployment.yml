@@ -30,4 +30,4 @@ spec:
       targetPort: 8761
   selector:
     app: kingen
-    type: ClusterIP
+    type: LoadBalancer

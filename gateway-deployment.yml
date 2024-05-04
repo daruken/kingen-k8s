@@ -30,4 +30,4 @@ spec:
       targetPort: 28080
   selector:
     app: gateway
-    type: ClusterIP
+    type: LoadBalancer
