@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rabbit-dp
+
+spec:
+  selector:
+    matchLabels:
+      app: rabbit
+  template:
+    metadata:
+      labels:
+        app: rabbit
+    spec:
+      containers:
+        - name: rabbit
+          image: daruken/rabbit:56cd288b235e39f1ee000b7a8fcfe166d50f9a4f
+          ports:
+            - containerPort: 18080
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: "1"
+            requests:
+              memory: 256Mi
+              cpu: "0.2"
