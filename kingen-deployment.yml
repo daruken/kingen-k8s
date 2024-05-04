@@ -30,5 +30,4 @@ spec:
       targetPort: 8761
   selector:
     app: kingen
-    externalTrafficPolicy: Local
-    type: LoadBalancer
+    type: NodePort
