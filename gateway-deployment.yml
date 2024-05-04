@@ -30,4 +30,5 @@ spec:
       targetPort: 28080
   selector:
     app: gateway
+    externalTrafficPolicy: Local
     type: LoadBalancer
