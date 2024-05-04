@@ -24,10 +24,10 @@ kind: Service
 metadata:
   name: kingen-svc
 spec:
+  type: NodePort
   ports:
-    - name: svc-port
+    - nodePort: 30000
       port: 8761
       targetPort: 8761
   selector:
     app: kingen
-    type: NodePort
