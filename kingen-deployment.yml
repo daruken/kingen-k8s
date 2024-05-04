@@ -26,7 +26,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - nodePort: 30000
+    - nodePort: 30001
       port: 8761
       targetPort: 8761
   selector:
