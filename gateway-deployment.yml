@@ -26,5 +26,7 @@ metadata:
 spec:
   ports:
     - port: 28080
+      targetPort: 28080
   selector:
     app: gateway
+    type: ClusterIP
