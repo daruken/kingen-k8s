@@ -13,7 +13,7 @@ spec:
         app: kingen
     spec:
       containers:
-        - image: daruken/kingen
+        - image: daruken/kingen:56cd288b235e39f1ee000b7a8fcfe166d50f9a4f
           name: kingen
           ports:
             - containerPort: 8761

@@ -13,7 +13,7 @@ spec:
         app: gateway
     spec:
       containers:
-        - image: daruken/gateway
+        - image: daruken/gateway:56cd288b235e39f1ee000b7a8fcfe166d50f9a4f
           name: gateway
           ports:
             - containerPort: 28080
