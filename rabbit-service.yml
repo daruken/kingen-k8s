@@ -3,10 +3,8 @@ kind: Service
 metadata:
   name: rabbit-svc
 spec:
-  type: NodePort
   ports:
-    - nodePort: 30009
-      port: 18080
+    - port: 18080
       targetPort: 18080
       protocol: TCP
   selector:
