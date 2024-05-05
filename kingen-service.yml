@@ -5,8 +5,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - nodePort: 30007
-      port: 8761
+    - port: 8761
       targetPort: 8761
       protocol: TCP
   selector:
