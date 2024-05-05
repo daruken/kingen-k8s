@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: kingen-svc
 spec:
-  type: NodePort
   ports:
     - port: 8761
       targetPort: 8761
